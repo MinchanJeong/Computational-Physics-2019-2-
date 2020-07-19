@@ -1,0 +1,18 @@
+## 2-(e) ##
+
+Quadrature method is more efficient.
+Quadrature method has smaller difference while MC and quad method took similar time.
+(In my result, simp and trep has difference in scale of 1e-5~6 | MC has error in scale of 1e-2)
+
+Indeed, on integral of 2 dimensional function, 
+total error of quadrature is O(N^-1), while MC has error in order O(N^-0.5).
+
+## 3-(d) ##
+
+3c is more efficient.
+Indeed, quadrature method(For 1D exact formula) has error in order O(N^-2), while MC method(For 4D) has error in order O(N^-0.5).
+
+Result show above argument seem plausible.
+MC method has variance in scale 1e-3~4,
+where trepizoidal,simpsons method has diffrence in order 1e-6~14
+
